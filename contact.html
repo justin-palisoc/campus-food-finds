@@ -26,6 +26,40 @@
     <section>
       <h2>Contact Us</h2>
 
+      <form>
+          <fieldset>
+              <legend>Your details</legend>
+
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+
+              <br><br>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+
+              <br><br>
+
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                  <option value="food-question">Food recommendation question</option>
+                  <option value="place-suggestion">Suggest a food place</option>
+                  <option value="guide-feedback">Guide feedback</option>
+                  <option value="other">Something else</option>
+              </select>
+
+              <br><br>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+
+              <br><br>
+
+              <button type="submit">Send message</button>
+
+          </fieldset>
+      </form>
+
       <p>
         If you have questions or suggestions about our food recommendations,
         you can reach us through the following:
