@@ -60,6 +60,56 @@
             </tr>
         </table>
 
+                <h2>Order Enquiry</h2>
+
+        <form>
+
+            <p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="20">
+            </p>
+
+            <fieldset>
+                <legend>Delivery Method</legend>
+
+                <p>
+                    <input type="radio" id="delivery" name="delivery-method" value="delivery">
+                    <label for="delivery">Delivery</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="pickup" name="delivery-method" value="pickup">
+                    <label for="pickup">Pickup</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Optional Extras</legend>
+
+                <p>
+                    <input type="checkbox" id="gift-wrap" name="extras" value="gift-wrap">
+                    <label for="gift-wrap">Gift wrapping</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="express" name="extras" value="express">
+                    <label for="express">Express handling</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="message-card" name="extras" value="message-card">
+                    <label for="message-card">Add a message card</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="email">Contact Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <button type="submit">Send Order Enquiry</button>
+
+        </form>
     </main>
 
     <footer>
