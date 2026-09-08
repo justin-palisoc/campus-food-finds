@@ -1,3 +1,9 @@
+:root {
+    --brand: #16a34a;
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --light: #f3f6f4;
+}
 * {
     box-sizing: border-box;
 }
@@ -119,21 +125,21 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 25px;
 }
 
 nav li {
-    margin: 0;
+    display: inline-block;
+    margin-right: 25px;
 }
+
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-/* Product Cards */
-.product-card {
+.product-card,
+.place-card {
     background-color: white;
     border-radius: 16px;
     padding: 20px;
@@ -141,7 +147,8 @@ nav a {
     margin-bottom: 24px;
 }
 
-.product-card h3 {
+.product-card h3,
+.place-card h3 {
     font-size: 24px;
     color: var(--brand);
     margin-top: 0;
@@ -202,4 +209,55 @@ input[type="submit"] {
 button:hover,
 input[type="submit"]:hover {
     background-color: #125c40;
+}
+.place-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    border-left: 6px solid var(--brand);
+    margin-bottom: 24px;
+}
+
+.place-card h3 {
+    font-size: 24px;
+    color: var(--brand);
+}
+/* Guide Place Cards */
+.place-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    border-left: 8px solid var(--brand);
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.place-card h3 {
+    font-size: 26px;
+    color: var(--brand);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.place-card p {
+    color: var(--ink);
+}
+
+.place-card img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.place-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--brand);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.place-card a:hover {
+    text-decoration: underline;
 }
