@@ -121,19 +121,21 @@ button {
 button:hover {
     background: #166534;
 }
-nav ul {
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 25px;
-}
-
-
-nav a {
+.site-header nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -260,4 +262,15 @@ input[type="submit"]:hover {
 
 .place-card a:hover {
     text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    text-align: center;
+}
+.hero p {
+    font-size: 20px;
 }
