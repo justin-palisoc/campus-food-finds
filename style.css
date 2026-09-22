@@ -282,3 +282,12 @@ input[type="submit"]:hover {
 .product-card {
     flex: 1 1 240px;
 }
+.place-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.place-card {
+    flex: 1 1 240px;
+}
