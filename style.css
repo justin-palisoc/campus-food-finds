@@ -291,23 +291,34 @@ input[type="submit"]:hover {
 .place-card {
     flex: 1 1 240px;
 }
-/* ===== 7.1 PAGE GRID ===== */
+
 
 body {
     background: #f4f1e8;
 }
 
-.page {
-    display: grid;
-    grid-template-columns: 220px 1fr;
+.page { 
+    display: grid; 
+    grid-template-columns: 1fr; 
     grid-template-areas:
-        "masthead masthead"
-        "side main"
-        "foot foot";
-    gap: 16px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 24px;
+        "masthead"
+        "main"
+        "side"
+        "foot";
+    gap: 16px; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding: 0 24px; 
+}
+
+@media (min-width: 700px) {
+    .page {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "masthead masthead"
+            "side main"
+            "foot foot";
+    }
 }
 
 header {
